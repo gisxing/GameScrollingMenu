@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF831B0118FA13CF0069CE43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0018FA13CF0069CE43 /* Foundation.framework */; };
+		DF831B0318FA13CF0069CE43 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0218FA13CF0069CE43 /* CoreGraphics.framework */; };
+		DF831B0518FA13CF0069CE43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0418FA13CF0069CE43 /* UIKit.framework */; };
+		DF831B0718FA13CF0069CE43 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0618FA13CF0069CE43 /* SpriteKit.framework */; };
+		DF831B0D18FA13CF0069CE43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF831B0B18FA13CF0069CE43 /* InfoPlist.strings */; };
+		DF831B0F18FA13CF0069CE43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B0E18FA13CF0069CE43 /* main.m */; };
+		DF831B1318FA13CF0069CE43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B1218FA13CF0069CE43 /* AppDelegate.m */; };
+		DF831B1618FA13CF0069CE43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF831B1418FA13CF0069CE43 /* Main.storyboard */; };
+		DF831B1918FA13CF0069CE43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B1818FA13CF0069CE43 /* ViewController.m */; };
+		DF831B1C18FA13CF0069CE43 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B1B18FA13CF0069CE43 /* MyScene.m */; };
+		DF831B1E18FA13CF0069CE43 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = DF831B1D18FA13CF0069CE43 /* Spaceship.png */; };
+		DF831B2018FA13CF0069CE43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF831B1F18FA13CF0069CE43 /* Images.xcassets */; };
+		DF831B2718FA13D00069CE43 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B2618FA13D00069CE43 /* XCTest.framework */; };
+		DF831B2818FA13D00069CE43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0018FA13CF0069CE43 /* Foundation.framework */; };
+		DF831B2918FA13D00069CE43 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF831B0418FA13CF0069CE43 /* UIKit.framework */; };
+		DF831B3118FA13D00069CE43 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF831B2F18FA13D00069CE43 /* InfoPlist.strings */; };
+		DF831B3318FA13D00069CE43 /* GameScrollingMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B3218FA13D00069CE43 /* GameScrollingMenuTests.m */; };
+		DF831B4018FA1B6D0069CE43 /* MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF831B3F18FA1B6D0069CE43 /* MenuView.m */; };
+		DF831B4218FA203E0069CE43 /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF831B4118FA203E0069CE43 /* MenuView.xib */; };
+		DF9F382018FA4DB3008D0907 /* NewGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9F381F18FA4DB3008D0907 /* NewGameScene.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF831B2A18FA13D00069CE43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF831AF518FA13CF0069CE43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF831AFC18FA13CF0069CE43;
+			remoteInfo = GameScrollingMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF831AFD18FA13CF0069CE43 /* GameScrollingMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameScrollingMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF831B0018FA13CF0069CE43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF831B0218FA13CF0069CE43 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF831B0418FA13CF0069CE43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF831B0618FA13CF0069CE43 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		DF831B0A18FA13CF0069CE43 /* GameScrollingMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameScrollingMenu-Info.plist"; sourceTree = "<group>"; };
+		DF831B0C18FA13CF0069CE43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF831B0E18FA13CF0069CE43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF831B1018FA13CF0069CE43 /* GameScrollingMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameScrollingMenu-Prefix.pch"; sourceTree = "<group>"; };
+		DF831B1118FA13CF0069CE43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF831B1218FA13CF0069CE43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF831B1518FA13CF0069CE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF831B1718FA13CF0069CE43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF831B1818FA13CF0069CE43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF831B1A18FA13CF0069CE43 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		DF831B1B18FA13CF0069CE43 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		DF831B1D18FA13CF0069CE43 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		DF831B1F18FA13CF0069CE43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF831B2518FA13D00069CE43 /* GameScrollingMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameScrollingMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF831B2618FA13D00069CE43 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF831B2E18FA13D00069CE43 /* GameScrollingMenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameScrollingMenuTests-Info.plist"; sourceTree = "<group>"; };
+		DF831B3018FA13D00069CE43 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF831B3218FA13D00069CE43 /* GameScrollingMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScrollingMenuTests.m; sourceTree = "<group>"; };
+		DF831B3E18FA1B6D0069CE43 /* MenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
+		DF831B3F18FA1B6D0069CE43 /* MenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		DF831B4118FA203E0069CE43 /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MenuView.xib; path = ../MenuView.xib; sourceTree = "<group>"; };
+		DF9F381E18FA4DB2008D0907 /* NewGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewGameScene.h; sourceTree = "<group>"; };
+		DF9F381F18FA4DB3008D0907 /* NewGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewGameScene.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF831AFA18FA13CF0069CE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B0318FA13CF0069CE43 /* CoreGraphics.framework in Frameworks */,
+				DF831B0518FA13CF0069CE43 /* UIKit.framework in Frameworks */,
+				DF831B0718FA13CF0069CE43 /* SpriteKit.framework in Frameworks */,
+				DF831B0118FA13CF0069CE43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF831B2218FA13CF0069CE43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B2718FA13D00069CE43 /* XCTest.framework in Frameworks */,
+				DF831B2918FA13D00069CE43 /* UIKit.framework in Frameworks */,
+				DF831B2818FA13D00069CE43 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF831AF418FA13CF0069CE43 = {
+			isa = PBXGroup;
+			children = (
+				DF831B0818FA13CF0069CE43 /* GameScrollingMenu */,
+				DF831B2C18FA13D00069CE43 /* GameScrollingMenuTests */,
+				DF831AFF18FA13CF0069CE43 /* Frameworks */,
+				DF831AFE18FA13CF0069CE43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF831AFE18FA13CF0069CE43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF831AFD18FA13CF0069CE43 /* GameScrollingMenu.app */,
+				DF831B2518FA13D00069CE43 /* GameScrollingMenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF831AFF18FA13CF0069CE43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF831B0018FA13CF0069CE43 /* Foundation.framework */,
+				DF831B0218FA13CF0069CE43 /* CoreGraphics.framework */,
+				DF831B0418FA13CF0069CE43 /* UIKit.framework */,
+				DF831B0618FA13CF0069CE43 /* SpriteKit.framework */,
+				DF831B2618FA13D00069CE43 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF831B0818FA13CF0069CE43 /* GameScrollingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DF831B1118FA13CF0069CE43 /* AppDelegate.h */,
+				DF831B1218FA13CF0069CE43 /* AppDelegate.m */,
+				DF831B1418FA13CF0069CE43 /* Main.storyboard */,
+				DF831B1718FA13CF0069CE43 /* ViewController.h */,
+				DF831B1818FA13CF0069CE43 /* ViewController.m */,
+				DF831B1A18FA13CF0069CE43 /* MyScene.h */,
+				DF831B1B18FA13CF0069CE43 /* MyScene.m */,
+				DF9F381E18FA4DB2008D0907 /* NewGameScene.h */,
+				DF9F381F18FA4DB3008D0907 /* NewGameScene.m */,
+				DF831B3E18FA1B6D0069CE43 /* MenuView.h */,
+				DF831B3F18FA1B6D0069CE43 /* MenuView.m */,
+				DF831B4118FA203E0069CE43 /* MenuView.xib */,
+				DF831B1D18FA13CF0069CE43 /* Spaceship.png */,
+				DF831B1F18FA13CF0069CE43 /* Images.xcassets */,
+				DF831B0918FA13CF0069CE43 /* Supporting Files */,
+			);
+			path = GameScrollingMenu;
+			sourceTree = "<group>";
+		};
+		DF831B0918FA13CF0069CE43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF831B0A18FA13CF0069CE43 /* GameScrollingMenu-Info.plist */,
+				DF831B0B18FA13CF0069CE43 /* InfoPlist.strings */,
+				DF831B0E18FA13CF0069CE43 /* main.m */,
+				DF831B1018FA13CF0069CE43 /* GameScrollingMenu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF831B2C18FA13D00069CE43 /* GameScrollingMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF831B3218FA13D00069CE43 /* GameScrollingMenuTests.m */,
+				DF831B2D18FA13D00069CE43 /* Supporting Files */,
+			);
+			path = GameScrollingMenuTests;
+			sourceTree = "<group>";
+		};
+		DF831B2D18FA13D00069CE43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF831B2E18FA13D00069CE43 /* GameScrollingMenuTests-Info.plist */,
+				DF831B2F18FA13D00069CE43 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF831AFC18FA13CF0069CE43 /* GameScrollingMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF831B3618FA13D00069CE43 /* Build configuration list for PBXNativeTarget "GameScrollingMenu" */;
+			buildPhases = (
+				DF831AF918FA13CF0069CE43 /* Sources */,
+				DF831AFA18FA13CF0069CE43 /* Frameworks */,
+				DF831AFB18FA13CF0069CE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameScrollingMenu;
+			productName = GameScrollingMenu;
+			productReference = DF831AFD18FA13CF0069CE43 /* GameScrollingMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF831B2418FA13CF0069CE43 /* GameScrollingMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF831B3918FA13D00069CE43 /* Build configuration list for PBXNativeTarget "GameScrollingMenuTests" */;
+			buildPhases = (
+				DF831B2118FA13CF0069CE43 /* Sources */,
+				DF831B2218FA13CF0069CE43 /* Frameworks */,
+				DF831B2318FA13CF0069CE43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF831B2B18FA13D00069CE43 /* PBXTargetDependency */,
+			);
+			name = GameScrollingMenuTests;
+			productName = GameScrollingMenuTests;
+			productReference = DF831B2518FA13D00069CE43 /* GameScrollingMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF831AF518FA13CF0069CE43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = gisxing;
+				TargetAttributes = {
+					DF831B2418FA13CF0069CE43 = {
+						TestTargetID = DF831AFC18FA13CF0069CE43;
+					};
+				};
+			};
+			buildConfigurationList = DF831AF818FA13CF0069CE43 /* Build configuration list for PBXProject "GameScrollingMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF831AF418FA13CF0069CE43;
+			productRefGroup = DF831AFE18FA13CF0069CE43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF831AFC18FA13CF0069CE43 /* GameScrollingMenu */,
+				DF831B2418FA13CF0069CE43 /* GameScrollingMenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF831AFB18FA13CF0069CE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B0D18FA13CF0069CE43 /* InfoPlist.strings in Resources */,
+				DF831B2018FA13CF0069CE43 /* Images.xcassets in Resources */,
+				DF831B4218FA203E0069CE43 /* MenuView.xib in Resources */,
+				DF831B1E18FA13CF0069CE43 /* Spaceship.png in Resources */,
+				DF831B1618FA13CF0069CE43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF831B2318FA13CF0069CE43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B3118FA13D00069CE43 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF831AF918FA13CF0069CE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B1C18FA13CF0069CE43 /* MyScene.m in Sources */,
+				DF831B1918FA13CF0069CE43 /* ViewController.m in Sources */,
+				DF831B1318FA13CF0069CE43 /* AppDelegate.m in Sources */,
+				DF9F382018FA4DB3008D0907 /* NewGameScene.m in Sources */,
+				DF831B0F18FA13CF0069CE43 /* main.m in Sources */,
+				DF831B4018FA1B6D0069CE43 /* MenuView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF831B2118FA13CF0069CE43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF831B3318FA13D00069CE43 /* GameScrollingMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF831B2B18FA13D00069CE43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF831AFC18FA13CF0069CE43 /* GameScrollingMenu */;
+			targetProxy = DF831B2A18FA13D00069CE43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF831B0B18FA13CF0069CE43 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF831B0C18FA13CF0069CE43 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF831B1418FA13CF0069CE43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF831B1518FA13CF0069CE43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF831B2F18FA13D00069CE43 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF831B3018FA13D00069CE43 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF831B3418FA13D00069CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF831B3518FA13D00069CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF831B3718FA13D00069CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameScrollingMenu/GameScrollingMenu-Prefix.pch";
+				INFOPLIST_FILE = "GameScrollingMenu/GameScrollingMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF831B3818FA13D00069CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameScrollingMenu/GameScrollingMenu-Prefix.pch";
+				INFOPLIST_FILE = "GameScrollingMenu/GameScrollingMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF831B3A18FA13D00069CE43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameScrollingMenu.app/GameScrollingMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameScrollingMenu/GameScrollingMenu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GameScrollingMenuTests/GameScrollingMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF831B3B18FA13D00069CE43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameScrollingMenu.app/GameScrollingMenu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameScrollingMenu/GameScrollingMenu-Prefix.pch";
+				INFOPLIST_FILE = "GameScrollingMenuTests/GameScrollingMenuTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF831AF818FA13CF0069CE43 /* Build configuration list for PBXProject "GameScrollingMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF831B3418FA13D00069CE43 /* Debug */,
+				DF831B3518FA13D00069CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF831B3618FA13D00069CE43 /* Build configuration list for PBXNativeTarget "GameScrollingMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF831B3718FA13D00069CE43 /* Debug */,
+				DF831B3818FA13D00069CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF831B3918FA13D00069CE43 /* Build configuration list for PBXNativeTarget "GameScrollingMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF831B3A18FA13D00069CE43 /* Debug */,
+				DF831B3B18FA13D00069CE43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF831AF518FA13CF0069CE43 /* Project object */;
+}
