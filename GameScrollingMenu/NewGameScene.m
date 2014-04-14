@@ -7,6 +7,7 @@
 //
 
 #import "NewGameScene.h"
+#import "MyScene.h"
 
 @implementation NewGameScene
 
@@ -14,8 +15,8 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
-        
+        self.backgroundColor = [SKColor colorWithRed:0.05 green:0.15 blue:0.3 alpha:1.0];
+ //       self.backgroundColor = [SKColor colorWithRed:0.30 green:0.15 blue:0.3 alpha:1.0];
  
          SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
          
@@ -29,4 +30,12 @@
     }
     return self;
 }
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    // touch and go back to the scene with the scrolling view
+    SKTransition *transition = [SKTransition doorsCloseHorizontalWithDuration:1];
+    MyScene *scene = [[MyScene alloc] initWithSize:self.view.bounds.size];
+    [self.scene.view presentScene:scene transition:transition];
+}
+
 @end

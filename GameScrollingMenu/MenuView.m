@@ -18,7 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (weak, nonatomic) IBOutlet UILabel *myLabel;
 
-@property ( nonatomic) BOOL flag;
+
 
 @end
 
@@ -43,22 +43,15 @@
     return _scene;
 }
 
--(BOOL )flag {
-    if (!_flag) _flag = NO;
-    return _flag;
-}
+
 
 - (IBAction)buttonClick:(id)sender {
-    NSLog(@"click !");
-    //when click , transit to a new scene
-
-    NSLog(@"%f, %@", self.view.bounds.size.height,self.scene );
-    self.myLabel.text = @"test";
-    /*
+    [self setHidden:YES];
+    
      SKTransition *transition = [SKTransition doorsCloseHorizontalWithDuration:1];
-     NewGameScene *gameScene = [[NewGameScene alloc] initWithSize:self.view.bounds.size];
-     [self.scene.view presentScene:gameScene transition:transition];
-    */
+     NewGameScene *gameScene = [[NewGameScene alloc] initWithSize:self.scene.view.bounds.size];
+     [self.scene.scene.view presentScene:gameScene transition:transition];
+    
 }
 
 - (id)initWithFrame:(CGRect)frame WithScene:(SKScene *)scene
@@ -68,9 +61,7 @@
     if (self) {
         // Initialization code
         NSLog(@"init with frame with scene");
-#warning why not set ??
-        _scene = scene;
-        self.flag = YES;
+        self.scene = scene;
         [[NSBundle mainBundle] loadNibNamed:@"MenuView" owner:self options:nil];
 
 
@@ -88,8 +79,6 @@
         NSLog(@"init with frame");
         [[NSBundle mainBundle] loadNibNamed:@"MenuView" owner:self options:nil];
         //self.backgroundColor = [UIColor greenColor];
-        self.flag = YES;
-        
         [self addSubview:self.view];
     }
     return self;
@@ -108,8 +97,6 @@
 - (void) awakeFromNib
 {
     [super awakeFromNib];
-#warning why not set ??
-    NSLog(@"----awake from nib: %@, flag: %d", self.scene, self.flag);
 
     self.scrollMenu.contentSize = CGSizeMake(272, 1000);
     NSLog(@"size: %f, %f", self.scrollMenu.contentSize.height,self.scrollMenu.contentSize.width );

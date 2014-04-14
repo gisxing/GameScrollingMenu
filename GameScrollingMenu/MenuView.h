@@ -12,6 +12,7 @@
 @interface MenuView : UIView 
 @property (strong, nonatomic)SKScene *scene;
 
+
 - (id)initWithFrame:(CGRect)frame WithScene:(SKScene *)scene;
 + (id)customView;
 @end
