@@ -63,8 +63,6 @@
         NSLog(@"init with frame with scene");
         self.scene = scene;
         [[NSBundle mainBundle] loadNibNamed:@"MenuView" owner:self options:nil];
-
-
         [self addSubview:self.view];
     }
     return self;
